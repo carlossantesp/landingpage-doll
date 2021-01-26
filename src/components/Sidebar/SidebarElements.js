@@ -16,6 +16,7 @@ export const SidebarContainer = styled.aside`
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+  overflow: hidden;
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -39,7 +40,7 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 180px);
+  grid-template-rows: repeat(6, 80px);
   text-align: center;
   padding:0;
 

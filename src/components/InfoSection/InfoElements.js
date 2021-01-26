@@ -15,10 +15,9 @@ export const InfoWrapper = styled.div`
   height: 860px;
   width: 100%;
   max-width: 1100px;
-  margin: 80px 0;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 80px 24px;
   justify-content: center;
 `
 
@@ -79,6 +78,9 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+  @media screen and (max-width: 768px){
+    min-width: initial;
+  }
 `
 
 export const BtnWrap = styled.div`
